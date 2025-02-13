@@ -1,0 +1,97 @@
+:root {
+    --navy: #182F48;
+  }
+  
+  @font-face {
+    font-family: 'Figtree';
+    src: url('fonts/Figtree-Regular.ttf');
+  }
+  
+  @font-face {
+    font-family: 'Figtree';
+    src: url('fonts/Figtree-Italic.ttf');
+    font-style: italic, oblique;
+  }
+  
+  @font-face {
+    font-family: 'Figtree';
+    src: url('fonts/Figtree-Bold.ttf');
+    font-weight: bold;
+  }
+
+  @font-face {
+    font-family: 'Figtree';
+    src: url('fonts/Figtree-BoldItalic.ttf');
+    font-weight: bold;
+    font-style: italic, oblique;
+  }
+
+  @font-face {
+    font-family: 'GothicA1';
+    src: url('fonts/GothicA1-ExtraBold.ttf');
+    font-weight: bold;
+  }
+
+  @font-face {
+    font-family: 'GothicA1';
+    src: url('fonts/GothicA1-Regular.ttf');
+  }
+  
+
+  canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  main {
+    position: absolute;
+    /* absolute position on main body is impt for threejs; */
+    width: 60vw;
+    color: black;
+    z-index: 99;
+    margin: 0px auto;
+    padding: 112px 40px;
+    font-family: 'Figtree';
+    display: flex;
+    flex-direction: column;
+    max-width: 1080px;
+    /* grid-template-columns: repeat(12, 1fr); */
+    /* gives 12 equally sized columns for positioning children */
+  }
+
+  .beat {
+    margin-top: 400px;
+    margin-bottom: 1200px;
+  }
+
+  h1 {
+    font-family: "GothicA1";
+    font-size: 64px;
+    font-weight: bold;
+    color: var(--navy);
+  }
+
+
+
+@media only screen and (max-width: 600px) {
+
+  body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+  main {
+    width: 100vw;
+    padding: 0;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+  }
+
+
+}
