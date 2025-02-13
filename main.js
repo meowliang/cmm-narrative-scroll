@@ -62,7 +62,7 @@ scene.background = gradientTexture;
 
 const objects = []; 
 const textureLoader = new THREE.TextureLoader();
-const folderPath = './assets/';
+const folderPath = '/assets/';
 const totalImages = 15;
 
 //load images
